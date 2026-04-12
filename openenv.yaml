@@ -1,0 +1,12 @@
+name: email-triage-env
+description: Email classification environment
+
+entrypoint: server.app:app
+
+observation_model: dict
+action_model: dict
+
+tasks:
+  - name: easy
+  - name: medium
+  - name: hard
